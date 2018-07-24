@@ -6,20 +6,24 @@ class AppContainer extends Component {
   constructor(props) {
     super(props);
     //함수는 콘스럭터 안에 있어야 함
-    this._changeMessage = () => {
-      if (this.state.message === "Hello") {
-        this.setState({
-          message: "Bye bye"
-        });
-      } else {
-        this.setState({
-          message: "Hello"
-        });
-      }
-    };
     this.state = {
-      message: "Hello",
-      changeMessage: this._changeMessage
+      notifications: {
+        "1": {
+          id: 1,
+          text: "Someting",
+          seen: false
+        },
+        "2": {
+          id: 2,
+          text: "Something else",
+          seen: false
+        },
+        "3": {
+          id: 2,
+          text: "Something else but diffrent",
+          seen: false
+        }
+      }
     };
   }
   render() {

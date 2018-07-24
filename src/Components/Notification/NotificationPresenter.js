@@ -58,7 +58,7 @@ const NotificationPresenter = ({ id, text, seen }) => {
       <Flex alignCenter justifyBetween>
         <Title>
           {/* 콘슈머는 함수를 필요 */}
-          <Store.Consumer>{store => store.message}</Store.Consumer>
+          {text}
         </Title>
         <FlexItem>
           <Fragment>

@@ -15,6 +15,7 @@ const AppPresenter = () => (
               key={store.notifications[key].id}
               id={store.notifications[key].id}
               text={store.notifications[key].text}
+              seen={store.notifications[key].seen}
             />
           ))
         }
